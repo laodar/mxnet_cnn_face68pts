@@ -6,6 +6,6 @@ train/val data agumented from helen,lpfw dataset.you can download .rec and .lst 
 
 1.get more richful data.
 
-2.samller learning rate to run more epochs.
+2.smaller learning rate to run more epochs.
 
 3.maybe need better network model to get better performace.
