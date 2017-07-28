@@ -2,10 +2,6 @@
 
 train/val data agumented from helen,lpfw dataset.you can download .rec and .lst files  here:https://pan.baidu.com/s/1hsMNg3a
 
-# TODO:
+# best pretrained model up to now
 
-1.get more richful data.
-
-2.smaller learning rate to run more epochs.
-
-3.maybe need better network model to get better performace.
+smpnet-0730.params you can download here:https://pan.baidu.com/s/1nvfu3Nz
