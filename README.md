@@ -20,11 +20,15 @@ train/val data agumented from helen,lpfw dataset.you   download .rec and .lst fi
 ## best pretrained model up to now
  
 you can download smpnet-0730.params here:https://pan.baidu.com/s/1nvfu3Nz
+
 you can get a smaller pretrained model here:http://pan.baidu.com/s/1i5bzaHR
 
 ## camera test:
+
 python model_test_128.py
+
 or
+
 python model_test_64.py
 
 
