@@ -1,4 +1,7 @@
+# data preprocess
+
 ## 1.crop with different boxs and fix the label,get cropped images and .lst file(for im2rec)
+
 run
 
 python crop_helen.py
