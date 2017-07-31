@@ -3,6 +3,11 @@ import numpy as np
 import shutil
 import os
 
+save_dir = 'ag_helen/'
+f_lst_read = open('crop_helen.lst')
+f_lst = open('ag_helen.lst','w')
+
+
 def write_lst(save_name,pts_float):
     global i_sample,f_lst
     pts_str = ''
@@ -11,16 +16,13 @@ def write_lst(save_name,pts_float):
     f_lst.writelines(str(i_sample)+' '+pts_str+save_name+'\n')
     i_sample += 1
 
-
-save_dir = 'ag_helen/'
 try:
     os.mkdir(save_dir)
 except:
     shutil.rmtree(save_dir)
     os.mkdir(save_dir)
 
-f_lst_read = open('crop_helen.lst')
-f_lst = open('ag_helen.lst','w')
+
 
 pts_float_org = np.zeros([68,2])
 n_ag = 10
@@ -46,11 +48,11 @@ for line in f_lst_read:
         img = img_org.copy()
 
         is_flip = np.random.randint(0,2)
-        if is_flip:
-            pts_float[:,0] = img_sz - pts_float[:,0] - 1.0
-            img = cv2.flip(img,1)
+        #if is_flip:
+        #    pts_float[:,0] = img_sz - pts_float[:,0] - 1.0
+        #    img = cv2.flip(img,1)
 
-        rotate_angle = 30.0*np.random.rand(1)-15.0
+        rotate_angle = 60.0*np.random.rand(1)-30.0
         M = cv2.getRotationMatrix2D((img_sz/2.0,img_sz/2.0),rotate_angle,1.0)
         img = cv2.warpAffine(img,M,(img_sz,img_sz))
         pts_float = np.concatenate((pts_float,np.ones([68,1])),axis=1).dot(M.transpose())
