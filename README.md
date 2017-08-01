@@ -1,6 +1,6 @@
-# mxnet_cnn_face68pts(unaccomplished)
+# mxnet_cnn_face68pts
 
-train/val data agumented from helen,lpfw dataset.you   download .rec and .lst files  here:https://pan.baidu.com/s/1hsMNg3a
+
 
 ## requirement
 
