@@ -21,7 +21,7 @@
  
 you can download smpnet-0730.params here:https://pan.baidu.com/s/1nvfu3Nz
 
-you can get a smaller pretrained model here:http://pan.baidu.com/s/1i5bzaHR
+you can get a smaller pretrained model here:https://pan.baidu.com/s/1pLa7Ehd
 
 ## camera test:
 
