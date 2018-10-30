@@ -1,4 +1,4 @@
-# mxnet_cnn_face72pts
+# mxnet_cnn_face68pts
 
 
 
